@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="3.0sp" android:paddingRight="3.0sp" android:focusableInTouchMode="true" android:nextFocusDown="@id/expand_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="3.0sp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/header_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_marginVertical="8.0dip">
+        <TextView android:textSize="11.0sp" android:textStyle="bold" android:id="@id/header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="monospace" />
+        <TextView android:textSize="11.0sp" android:textStyle="italic" android:ellipsize="start" android:id="@id/content_type" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:fontFamily="monospace" android:textAlignment="textEnd" android:layout_marginStart="16.0dip" android:layout_marginEnd="2.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/dump_box" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="9.0dip" android:textStyle="bold" android:id="@id/dump" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textIsSelectable="true" android:fontFamily="@font/sourcecodepro_regular" android:textDirection="ltr" />
+    </RelativeLayout>
+    <ImageView android:layout_gravity="end" android:id="@id/expand_button" android:layout_width="30.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_expand_more" android:adjustViewBounds="true" android:layout_marginEnd="4.0dip" app:tint="@color/colorTabText" />
+</LinearLayout>

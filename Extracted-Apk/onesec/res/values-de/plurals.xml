@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="main_screen_card_apps_title">
+        <item quantity="other">%1d Apps hinzugefügt</item>
+        <item quantity="one">%1d App hinzugefügt</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d neue Benachrichtigungen</item>
+        <item quantity="one">%d neue Benachrichtigung</item>
+    </plurals>
+    <plurals name="period_day">
+        <item quantity="other">%d Tage</item>
+        <item quantity="one">Tag</item>
+    </plurals>
+    <plurals name="period_hour">
+        <item quantity="other">%d Stunden</item>
+        <item quantity="one">Stunde</item>
+    </plurals>
+    <plurals name="period_minute">
+        <item quantity="other">%d Minuten</item>
+        <item quantity="one">Minute</item>
+    </plurals>
+    <plurals name="period_month">
+        <item quantity="other">%d Monate</item>
+        <item quantity="one">Monat</item>
+    </plurals>
+    <plurals name="period_second">
+        <item quantity="other">%d Sekunden</item>
+        <item quantity="one">Sekunde</item>
+    </plurals>
+    <plurals name="period_year">
+        <item quantity="other">%d Jahre</item>
+        <item quantity="one">Jahr</item>
+    </plurals>
+</resources>

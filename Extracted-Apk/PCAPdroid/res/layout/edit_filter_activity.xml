@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip">
+        <RelativeLayout android:id="@id/connections_mask" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+            <CheckBox android:id="@id/not_hidden" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/not_hidden_filter" android:layout_toStartOf="@id/edit_mask" android:layout_alignParentStart="true" />
+            <Button android:textColor="@color/colorTabText" android:id="@id/edit_mask" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/edit_list" android:layout_alignParentEnd="true" style="?materialButtonOutlinedStyle" />
+        </RelativeLayout>
+        <CheckBox android:id="@id/only_blacklisted" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/show_only_malicious" />
+        <CheckBox android:id="@id/only_cleartext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/show_only_cleartext" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/status" />
+        <com.google.android.material.chip.ChipGroup android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" app:singleSelection="true">
+            <com.google.android.material.chip.Chip android:id="@id/status_active" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/conn_status_active" style="@style/Widget.MaterialComponents.Chip.Choice" />
+            <com.google.android.material.chip.Chip android:id="@id/status_closed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/conn_status_closed" style="@style/Widget.MaterialComponents.Chip.Choice" />
+            <com.google.android.material.chip.Chip android:id="@id/status_unreachable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/conn_status_unreachable" style="@style/Widget.MaterialComponents.Chip.Choice" />
+            <com.google.android.material.chip.Chip android:id="@id/status_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/error" style="@style/Widget.MaterialComponents.Chip.Choice" />
+        </com.google.android.material.chip.ChipGroup>
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/colorAccent" android:id="@id/decryption_status_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/decryption" />
+        <com.google.android.material.chip.ChipGroup android:id="@id/decryption_status_group" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" app:singleSelection="true">
+            <com.google.android.material.chip.Chip android:id="@id/dec_status_decrypted" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/decrypted" style="@style/Widget.MaterialComponents.Chip.Choice" />
+            <com.google.android.material.chip.Chip android:id="@id/dec_status_not_decryptable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/not_decryptable" style="@style/Widget.MaterialComponents.Chip.Choice" />
+            <com.google.android.material.chip.Chip android:id="@id/dec_status_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/error" style="@style/Widget.MaterialComponents.Chip.Choice" />
+        </com.google.android.material.chip.ChipGroup>
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/colorAccent" android:id="@id/firewall_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/firewall" />
+        <com.google.android.material.chip.ChipGroup android:id="@id/firewall_group" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" app:singleSelection="true">
+            <com.google.android.material.chip.Chip android:id="@id/status_blocked" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/blocked_connection_filter" style="@style/Widget.MaterialComponents.Chip.Choice" />
+            <com.google.android.material.chip.Chip android:id="@id/status_allowed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/allowed_connection_filter" style="@style/Widget.MaterialComponents.Chip.Choice" />
+        </com.google.android.material.chip.ChipGroup>
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/colorAccent" android:id="@id/interfaces_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/network_interface" />
+        <com.google.android.material.chip.ChipGroup android:id="@id/interfaces" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" app:singleSelection="true" />
+    </LinearLayout>
+</ScrollView>
